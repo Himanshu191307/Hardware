@@ -1,0 +1,27 @@
+.globalNav .dropdownRoot{position:absolute;z-index:1000;left:0;right:0;top:60px;pointer-events:none;-webkit-transform:rotateX(-15deg);transform:rotateX(-15deg);-webkit-transform-origin:50% -50px;transform-origin:50% -50px;opacity:0;will-change:transform,opacity;-webkit-transition-property:opacity,-webkit-transform;transition-property:opacity,-webkit-transform;transition-property:transform,opacity;transition-property:transform,opacity,-webkit-transform;-webkit-transition-duration:.25s;transition-duration:.25s;display:none}
+.globalNav.initialized .dropdownRoot{display:block}
+
+.globalNav.dropdownActive .dropdownRoot{opacity:1;pointer-events:auto;-webkit-transform:none;transform:none}
+.globalNav .dropdownBackground{background:#fff;border-radius:4px;overflow:hidden;-webkit-box-shadow:0 50px 100px rgba(50,50,93,.1),0 15px 35px rgba(50,50,93,.15),0 5px 15px rgba(0,0,0,.1);box-shadow:0 50px 100px rgba(50,50,93,.1),0 15px 35px rgba(50,50,93,.15),0 5px 15px rgba(0,0,0,.1);width:380px;height:400px;-webkit-transform:translateX(0);transform:translateX(0);-webkit-transform-origin:0 0;transform-origin:0 0}
+.globalNav .alternateBackground,.globalNav .dropdownBackground{position:absolute;top:0;left:0;will-change:transform;-webkit-transition-property:-webkit-transform;transition-property:-webkit-transform;transition-property:transform;transition-property:transform,-webkit-transform;-webkit-transition-duration:.25s;transition-duration:.25s}
+.globalNav .dropdownArrow{top:-6px;margin:0 0 0 -6px;width:12px;height:12px;-webkit-transform:rotate(45deg);transform:rotate(45deg);border-radius:4px 0 0 0;background:#fff;-webkit-box-shadow:-3px -3px 5px rgba(82,95,127,.1);box-shadow:-3px -3px 5px rgba(82,95,127,.1);will-change:transform;-webkit-transition-property:-webkit-transform;transition-property:-webkit-transform;transition-property:transform;transition-property:transform,-webkit-transform}
+.globalNav .dropdownArrow,.globalNav .dropdownContainer{position:absolute;left:0;-webkit-transition-duration:.25s;transition-duration:.25s}
+.globalNav .dropdownContainer{overflow:hidden;width:500px;top:0;-webkit-transform:translateX(0);transform:translateX(0);will-change:transform,width,height;-webkit-transition-property:width,height,-webkit-transform;transition-property:width,height,-webkit-transform;transition-property:transform,width,height;transition-property:transform,width,height,-webkit-transform}
+.globalNav .dropdownSection{opacity:0;pointer-events:none;will-change:transform,opacity;-webkit-transition-property:opacity,-webkit-transform;transition-property:opacity,-webkit-transform;transition-property:transform,opacity;transition-property:transform,opacity,-webkit-transform;-webkit-transition-duration:.25s;transition-duration:.25s;background:red}
+.globalNav .dropdownSection.active{opacity:1;-webkit-transform:translateX(0);transform:translateX(0)}
+.globalNav .dropdownSection.left{-webkit-transform:translateX(-150px);transform:translateX(-150px)}
+.globalNav .dropdownSection.right{-webkit-transform:translateX(150px);transform:translateX(150px)}
+.globalNav.dropdownActive .dropdownSection.active{pointer-events:auto}
+.globalNav.noDropdownTransition .alternateBackground,.globalNav.noDropdownTransition .dropdownArrow,.globalNav.noDropdownTransition .dropdownBackground,.globalNav.noDropdownTransition .dropdownContainer,.globalNav.noDropdownTransition .dropdownSection{-webkit-transition:none;transition:none}
+.globalNav .dropdownContent{position:absolute;top:0;left:0;padding:15px 20px;}
+.globalNav .linkGroup{ width:210px;display:inline-block; vertical-align:top;}
+.globalNav .linkGroup li{border-bottom:1px solid #eaeaea;}
+.globalNav .linkGroup li a i{display:none;}
+.globalNav .linkGroup li a.active i{display:block;}
+.globalNav .linkGroup li:last-child{border-bottom:none;}
+.globalNav .linkGroup li a{color:#717171; padding: 8px 0; display:inline-block; width:100%;line-height: 24px;}
+.globalNav .linkGroup li a i{position:relative; top:5px;}
+.globalNav .linkGroup.childnav{width:235px; display:inline-block;padding-left:15px; vertical-align:top; border-right:none; display:none; }
+.globalNav .linkGroup.childnav.active{display:inline-block;}
+
+
